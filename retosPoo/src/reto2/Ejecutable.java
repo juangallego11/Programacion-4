@@ -7,10 +7,7 @@ package reto2;
 
 import java.util.Scanner;
 
-/**
- *
- * @author cristiancg
- */
+
 public class Ejecutable {
 
     /**
