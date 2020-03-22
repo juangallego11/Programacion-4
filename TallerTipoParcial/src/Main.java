@@ -1,5 +1,6 @@
 
 import ejercicio1.Isoceles;
+import ejercicio2.Producto1;
 import ejercicio_11.Complejo;
 import ejercicio4.Clase1;
 import ejercicio5.Clase2;
@@ -174,6 +175,7 @@ public class Main {
  
  /* Ejercicio 15*/
  
+        /*
         ListaEnlazada lista = new ListaEnlazada();
         lista.crearlista();
         
@@ -184,6 +186,17 @@ public class Main {
         Libro1 libro2 = new Libro1("El callejon de los milagros");
         lista.AgregarLibro(libro2);
         lista.listar();
+        */
         
+        
+        
+ /*Ejercicio 2*/
+ 
+    Producto1 prod = new Producto1(1, "cebolla", 2000.00 );
+        System.out.println(prod.toString());
+        prod.modificarCosto(1, 4000.00);
+        System.out.println(prod.toString());
+        
+       
     }
 }
