@@ -9,6 +9,8 @@ import ejercicio9.Clase3;
 import ejercicio_12.Autor;
 import ejercicio_12.Libro;
 import ejercicio_13.Alumno;
+import ejercicio_14.Factura;
+import ejercicio_14.Producto;
 import ejercicio_16.Lista;
 
 public class Main {
@@ -73,20 +75,15 @@ public class Main {
     System.out.println("3 * p(x) = " + s);
          */
  /*Ejercicio 8 */
- 
- 
-        /*
+ /*
         Clase3 obj1 = new Clase3 (7);
         Clase3 obj2 = new Clase3 (9);
         obj2 = obj1;
         System.out.print(obj1.valorprop() + " ");
         System.out.print(obj2.valorprop() + " ");
-        */
-        
-        
-   /*Ejercicio 11*/
-   
-        /*
+         */
+ /*Ejercicio 11*/
+ /*
         Complejo c1 = new Complejo(1.0, 1.0);
         Complejo c2 = new Complejo(2.0, 2.0);
         Complejo c3;
@@ -97,21 +94,15 @@ public class Main {
         System.out.println(c1 + " - " + c2 + " = " + c3);
         c3 = c1.multiplicar(c2);
         System.out.println(c1 + " * " + c2 + " = " + c3);
-        */
-        
-        
-    /*Ejercicio 12*/
-    
-        /*
+         */
+ /*Ejercicio 12*/
+ /*
         Autor autor = new Autor("Paul", "Auster");
         Libro libro = new Libro("La Trilogia de NewYork", autor);
         System.out.println(libro.getTitulo() + " de " + (libro.getAutor()).toString());
-        */
-        
-        
-    /*Ejercicio 13*/
-    
-        /*
+         */
+ /*Ejercicio 13*/
+ /*
         Alumno a1 = new Alumno();
         System.out.println("Objeto a1:\n-----------\n");
         a1.imprimir();
@@ -137,11 +128,9 @@ public class Main {
         b.cambiargrupo('B');
         System.out.println("\nDentro del metodo prueba2. \n");
         b.imprimir();
-        */
-        
-        
-    /*Ejercicio 16*/
-    
+         */
+ /*Ejercicio 16*/
+ /*
         Lista colores = new Lista();
         System.out.println(" ");
         colores.incluir("rojo ");
@@ -150,9 +139,21 @@ public class Main {
         System.out.println(" ");
         colores.incluir("verde ");
         colores.imprimir();
-    
-    
         
+         */
+        Producto producto1 = new Producto("C1", "Papel higienico", 24.00);
+        Producto producto2 = new Producto("H23", "Crema dental", 234.00);
+        Producto producto3 = new Producto("M30", "Toallas", 234.00);
+                 
+        Factura factu = new Factura("1040", producto1);
+        System.out.println(factu);
+        
+        Factura factu2 = new Factura("1041", producto2);
+        System.out.println(factu2);
+        
+        producto2.actualizarNombreProducto("K123", "Desinfectante", 247.00);
+        System.out.println(producto2);
+        
+        System.out.println(factu2);
     }
 }
-

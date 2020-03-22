@@ -14,9 +14,15 @@ public class Producto {
     private String nombreProducto;
     private double precioProducto;
 
+    public Producto() {
+  
+    }
+
     @Override
     public String toString() {
-        return "Producto{" + "idProducto=" + idProducto + ", nombreProducto=" + nombreProducto + ", precioProducto=" + precioProducto + '}';
+        return "Identificador: " + idProducto + "\n" +
+               "Nombre del producto: " + nombreProducto + "\n" +
+               "Precio del producto: " + precioProducto + " ";
     }
 
     public Producto(String idProducto, String nombreProducto, double precioProducto) {
@@ -49,10 +55,14 @@ public class Producto {
         this.nombreProducto = nombreProducto;
     }
     
-    public void actualizarNombreProducto(String idproducto){
-        
-        idProducto = idproducto;
-        //if(idproducto){
+    public void actualizarNombreProducto(String idproducto, String nombre, double precio){
+        if(idproducto.equals(this.idProducto)){
+           this.nombreProducto = nombre;
+           this.precioProducto= precio;
+            System.out.println("Se actualizo el producto");
+        } else {
+            System.out.println("El producto no existe");
+        }
             
         }
         

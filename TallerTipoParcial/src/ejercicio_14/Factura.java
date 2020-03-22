@@ -17,9 +17,14 @@ public class Factura {
         this.producto = producto;
     }
 
+    public Factura() {
+    }
+
     @Override
     public String toString() {
-        return "Factura{" + "idFactura=" + idFactura + ", producto=" + producto + '}';
+        return "Informacion del Producto" + "\n" +
+                "Factura Nro: " + idFactura + "\n" +
+                "Producto: " + producto;
     }
 
     public Producto getProducto() {
@@ -36,6 +41,15 @@ public class Factura {
 
     public void setIdFactura(String idFactura) {
         this.idFactura = idFactura;
+    }
+    
+    public void consultarFactura(String idfactura){
+        if(idfactura.equals(idFactura)){
+            producto.toString();
+     
+        }
+        
+        
     }
     
 }
