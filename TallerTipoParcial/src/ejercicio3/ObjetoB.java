@@ -18,6 +18,7 @@ d) Ninguna de las anteriores es cierta
 //Respuesta
 
 // Un objeto A hereda de B porque es una relacion uno a uno
+//Un método de B tiene como parámetro un objeto A
 
 public class ObjetoB {
     

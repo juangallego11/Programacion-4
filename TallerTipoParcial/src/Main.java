@@ -6,6 +6,7 @@ import ejercicio5.Clase2;
 import ejercicio6.Polinomio;
 import ejercicio7.Cuenta;
 import ejercicio9.Clase3;
+import ejercicio_10.Ordenador;
 import ejercicio_12.Autor;
 import ejercicio_12.Libro;
 import ejercicio_13.Alumno;
@@ -74,14 +75,30 @@ public class Main {
     Polinomio s = p.multiplicaEscalar(3);
     System.out.println("3 * p(x) = " + s);
          */
- /*Ejercicio 8 */
- /*
-        Clase3 obj1 = new Clase3 (7);
+ /*Ejercicio 9 */
+ 
+        /*Clase3 obj1 = new Clase3 (7);
         Clase3 obj2 = new Clase3 (9);
         obj2 = obj1;
         System.out.print(obj1.valorprop() + " ");
         System.out.print(obj2.valorprop() + " ");
-         */
+        */  
+        
+        
+        /*Ejercicio 10*/
+        
+        Ordenador sobremesa = new Ordenador (900);
+        Ordenador portatil = new Ordenador (1100);
+        
+        portatil = sobremesa;
+        sobremesa = null;
+        System.out.println(sobremesa.prop);
+        System.out.println(portatil.prop);
+        
+        
+        
+        
+        
  /*Ejercicio 11*/
  /*
         Complejo c1 = new Complejo(1.0, 1.0);
@@ -141,6 +158,10 @@ public class Main {
         colores.imprimir();
         
          */
+ 
+ /* Ejercicio 14*/
+ 
+ /*
         Producto producto1 = new Producto("C1", "Papel higienico", 24.00);
         Producto producto2 = new Producto("H23", "Crema dental", 234.00);
         Producto producto3 = new Producto("M30", "Toallas", 234.00);
@@ -155,5 +176,10 @@ public class Main {
         System.out.println(producto2);
         
         System.out.println(factu2);
+
+*/
+ 
+ 
+ 
     }
 }
