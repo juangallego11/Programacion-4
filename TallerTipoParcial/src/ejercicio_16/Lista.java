@@ -5,6 +5,19 @@
  */
 package ejercicio_16;
 
+//16. ¿ Qué imprime el siguiente programa?
+//a) rojo azul verde 
+//b) null 
+//c) rojo azul 
+//d) azul verde
+
+//Respuesta
+
+/*
+Imprime {rojo azul}
+opcion D
+*/
+
 public class Lista {
 
     private Nodo primero;
