@@ -12,10 +12,12 @@ import ejercicio_12.Libro;
 import ejercicio_13.Alumno;
 import ejercicio_14.Factura;
 import ejercicio_14.Producto;
+import ejercicio_15.Libro1;
+import ejercicio_15.ListaEnlazada;
 import ejercicio_16.Lista;
 
 public class Main {
-
+    
     public static void main(String[] args) {
 
         /*Ejercicio 1*/
@@ -76,17 +78,14 @@ public class Main {
     System.out.println("3 * p(x) = " + s);
          */
  /*Ejercicio 9 */
- 
-        /*Clase3 obj1 = new Clase3 (7);
+ /*Clase3 obj1 = new Clase3 (7);
         Clase3 obj2 = new Clase3 (9);
         obj2 = obj1;
         System.out.print(obj1.valorprop() + " ");
         System.out.print(obj2.valorprop() + " ");
-        */  
-        
-        
-        /*Ejercicio 10*/
-        
+         */
+ /*Ejercicio 10*/
+ /*
         Ordenador sobremesa = new Ordenador (900);
         Ordenador portatil = new Ordenador (1100);
         
@@ -94,11 +93,7 @@ public class Main {
         sobremesa = null;
         System.out.println(sobremesa.prop);
         System.out.println(portatil.prop);
-        
-        
-        
-        
-        
+         */
  /*Ejercicio 11*/
  /*
         Complejo c1 = new Complejo(1.0, 1.0);
@@ -158,9 +153,7 @@ public class Main {
         colores.imprimir();
         
          */
- 
  /* Ejercicio 14*/
- 
  /*
         Producto producto1 = new Producto("C1", "Papel higienico", 24.00);
         Producto producto2 = new Producto("H23", "Crema dental", 234.00);
@@ -177,9 +170,20 @@ public class Main {
         
         System.out.println(factu2);
 
-*/
+         */
  
+ /* Ejercicio 15*/
  
- 
+        ListaEnlazada lista = new ListaEnlazada();
+        lista.crearlista();
+        
+        Libro1 libro = new Libro1("Niebla");
+        lista.AgregarLibro(libro);
+        Libro1 libro1 = new Libro1("La Metamorfosis");
+        lista.AgregarLibro(libro1);
+        Libro1 libro2 = new Libro1("El callejon de los milagros");
+        lista.AgregarLibro(libro2);
+        lista.listar();
+        
     }
 }
