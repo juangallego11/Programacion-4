@@ -14,8 +14,7 @@ public class Nodo {
     private Libro1 libro;
     private Nodo siguiente;
 
-
-
+    
     
     public Nodo getSiguiente() {
         return siguiente;
