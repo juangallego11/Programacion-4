@@ -37,8 +37,8 @@ public class Main {
         cliente.getCuenta().getSaldo();
          */
         Furgonetas furgoneta1 = new Furgonetas("RLM80E", 60000.00, "5 TONELADAS");
-        Coches coche1 = new Coches("KVJ-131", 88000.00, true, false);
-        Motos moto1 = new Motos("VNS28E", 7000.00, true, false);
+        Coches coche1 = new Coches("KVJ-131", 88000.00, true, true);
+        Motos moto1 = new Motos("VNS28E", 7000.00, true, true);
         Vehiculo vehi = new Vehiculo(furgoneta1, coche1, moto1);
         vehi.alquilarFurgoneta(true);
         System.out.println("");
@@ -53,9 +53,9 @@ public class Main {
         System.out.println(moto1);
         System.out.println("");
         vehi.devolverFurgoneta("RLM80E", 80000.00);
+        System.out.println("");
         vehi.devolverMoto("VNS28E", 9000.00);
+        System.out.println("");
         vehi.devolverCoche("KVJ-131", 100000.00);
-        
-
     }
 }

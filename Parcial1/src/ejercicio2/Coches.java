@@ -81,7 +81,8 @@ public class Coches {
         if (extras == true) {
             double b = (kilometrajeGastado * tarifa) + 20.0;
             this.estadoDeAlquilado = false;
-            System.out.println("costo alquiler: " + b);
+            System.out.println("El costo del alquiler del coche es : " + b + "\n"+
+                    "tarifa por servicios extra incluida.");
             return b;
         } else {
             double b = kilometrajeGastado * tarifa;

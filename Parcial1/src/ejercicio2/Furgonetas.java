@@ -78,7 +78,7 @@ public class Furgonetas {
         double kilometrajeGastado = kilometrajeAco - this.kilometrajeAcomulado;
         double b = kilometrajeGastado * tarifa;
         this.estadoDeAlquilado = false;
-        System.out.println("costo alquiler: " + b);
+        System.out.println("costo alquiler de la furgoneta es: " + b);
         return b;
     }
 }

@@ -81,12 +81,13 @@ public class Motos {
         if (casco == true) {
             double b = (kilometrajeGastado * tarifa) + 10.0;
             this.estadoDeAlquilado = false;
-            System.out.println("costo alquiler: " + b);
+            System.out.println("costo alquiler de la moto es: " + b + "\n" +
+                    "tarifa por servicios extra incluida.");
             return b;
         } else {
             double b = kilometrajeGastado * tarifa;
             this.estadoDeAlquilado = false;
-            System.out.println("costo alquiler: " + b);
+            System.out.println("costo alquiler de la moto es: " + b);
             return b;
         }
 
