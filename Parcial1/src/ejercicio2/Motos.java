@@ -5,7 +5,7 @@
  */
 package ejercicio2;
 
-public class Motos{
+public class Motos {
 
     private String matricula;
     private double kilometrajeAcomulado;
@@ -19,9 +19,6 @@ public class Motos{
         this.estadoDeAlquilado = estadoDeAlquilado;
         this.casco = casco;
     }
-
-
-
 
     public String getMatricula() {
         return matricula;
@@ -65,12 +62,12 @@ public class Motos{
 
     @Override
     public String toString() {
-        return "Datos de la Moto: " + "\n"+
-                "Matricula:" + matricula + "\n"+
-                "Kilometraje acomulado: " + kilometrajeAcomulado + "\n"+
-                "Estado de Alquiler: " + estadoDeAlquilado + "\n"+
-                "Casco: " + casco + "\n"+
-                "Tarifa: " + tarifa + " " +"Euros x Kilometro";
+        return "Datos de la Moto: " + "\n"
+                + "Matricula:" + matricula + "\n"
+                + "Kilometraje acomulado: " + kilometrajeAcomulado + "\n"
+                + "Estado de Alquiler: " + estadoDeAlquilado + "\n"
+                + "Casco: " + casco + "\n"
+                + "Tarifa: " + tarifa + " " + "Euros x Kilometro";
     }
 
     public void alquilarMoto() {
@@ -79,9 +76,19 @@ public class Motos{
 
     }
 
-    public void devolverMoto() {
-        this.estadoDeAlquilado = false;
-        System.out.println("Se ha devuelto con exito la moto de matricula: " + matricula);
+    public double devolverMoto(String matricula, double kilometrajeAco) {
+        double kilometrajeGastado = kilometrajeAco - this.kilometrajeAcomulado;
+        if (casco == true) {
+            double b = (kilometrajeGastado * tarifa) + 10.0;
+            this.estadoDeAlquilado = false;
+            System.out.println("costo alquiler: " + b);
+            return b;
+        } else {
+            double b = kilometrajeGastado * tarifa;
+            this.estadoDeAlquilado = false;
+            System.out.println("costo alquiler: " + b);
+            return b;
+        }
 
     }
 }

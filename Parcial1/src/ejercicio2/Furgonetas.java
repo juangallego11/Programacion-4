@@ -5,7 +5,7 @@
  */
 package ejercicio2;
 
-public class Furgonetas{
+public class Furgonetas {
 
     private String matricula;
     private double kilometrajeAcomulado;
@@ -18,7 +18,6 @@ public class Furgonetas{
         this.kilometrajeAcomulado = kilometrajeAcomulado;
         this.capacidadCarga = capacidadCarga;
     }
-
 
     @Override
     public String toString() {
@@ -75,8 +74,11 @@ public class Furgonetas{
         System.out.println("Se ha alquilado con exito la furgoneta de placas: " + matricula);
     }
 
-    public void devolverFurgoneta() {
+    public double devolverFurgoneta(String matricula, double kilometrajeAco) {
+        double kilometrajeGastado = kilometrajeAco - this.kilometrajeAcomulado;
+        double b = kilometrajeGastado * tarifa;
         this.estadoDeAlquilado = false;
-        System.out.println("Has devuelto con exito la furgoneta de placas: " + matricula);
+        System.out.println("costo alquiler: " + b);
+        return b;
     }
 }

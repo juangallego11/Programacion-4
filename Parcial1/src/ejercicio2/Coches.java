@@ -5,7 +5,7 @@
  */
 package ejercicio2;
 
-public class Coches{
+public class Coches {
 
     private String matricula;
     private double kilometrajeAcomulado;
@@ -19,8 +19,6 @@ public class Coches{
         this.estadoDeAlquilado = estadoDeAlquilado;
         this.extras = extras;
     }
-
-
 
     public boolean isExtras() {
         return extras;
@@ -64,23 +62,34 @@ public class Coches{
 
     @Override
     public String toString() {
-        return "Datos del coche: " + "\n" +
-                "Matricula: " + matricula + "\n" +
-                "Kilometraje acomulado: " + kilometrajeAcomulado + "\n" +
-                "Estad de Alquilado: " + estadoDeAlquilado + "\n" +
-                "Extras: " + extras + "\n" +
-                "Tarifa: " + tarifa +" "+ "Euros x Kilometro";
+        return "Datos del coche: " + "\n"
+                + "Matricula: " + matricula + "\n"
+                + "Kilometraje acomulado: " + kilometrajeAcomulado + "\n"
+                + "Estad de Alquilado: " + estadoDeAlquilado + "\n"
+                + "Extras: " + extras + "\n"
+                + "Tarifa: " + tarifa + " " + "Euros x Kilometro";
     }
-    
-    public void alquilarCoche(){
+
+    public void alquilarCoche() {
         this.estadoDeAlquilado = true;
         System.out.println("Se ha alquilado con exito el coche de matricula: " + matricula);
-        
+
     }
-    
-    public void  devolverCoche(){
-        this.estadoDeAlquilado = false;
-        System.out.println("Se ha devuelto con exito el coche de matricula: " + matricula);
+
+    public double devolverCoche(String matricula, double kilometrajeAco) {
+        double kilometrajeGastado = kilometrajeAco - this.kilometrajeAcomulado;
+        if (extras == true) {
+            double b = (kilometrajeGastado * tarifa) + 20.0;
+            this.estadoDeAlquilado = false;
+            System.out.println("costo alquiler: " + b);
+            return b;
+        } else {
+            double b = kilometrajeGastado * tarifa;
+            this.estadoDeAlquilado = false;
+            System.out.println("costo alquiler: " + b);
+            return b;
+        }
+
     }
-    
+
 }

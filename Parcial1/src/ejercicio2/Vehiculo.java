@@ -9,19 +9,19 @@ package ejercicio2;
 
 public class Vehiculo {
     
-    private String  matricula;
-    private double kilometrajeAcomulado;
-    private boolean estadoDeAlquilado;
-    private double tarifa;
+    //private String  matricula;
+    //private double kilometraje;
+    //private boolean estadoDeAlquilado;
+    //private double tarifa;
     private Furgonetas furgoneta;
     private Coches coche;
     private Motos moto;
 
-    public Vehiculo(String matricula, double kilometrajeAcomulado, boolean estadoDeAlquilado, double tarifa, Furgonetas furgoneta, Coches coche, Motos moto) {
-        this.matricula = matricula;
-        this.kilometrajeAcomulado = kilometrajeAcomulado;
-        this.estadoDeAlquilado = estadoDeAlquilado;
-        this.tarifa = tarifa;
+    public Vehiculo(Furgonetas furgoneta, Coches coche, Motos moto) {
+        //this.matricula = matricula;
+        //this.kilometrajeAcomulado = kilometrajeAcomulado;
+        //this.estadoDeAlquilado = estadoDeAlquilado;
+        //this.tarifa = tarifa;
         this.furgoneta = furgoneta;
         this.coche = coche;
         this.moto = moto;
@@ -29,8 +29,9 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo{" + "matricula=" + matricula + ", kilometrajeAcomulado=" + kilometrajeAcomulado + ", estadoDeAlquilado=" + estadoDeAlquilado + ", tarifa=" + tarifa + ", furgoneta=" + furgoneta + ", coche=" + coche + ", moto=" + moto + '}';
+        return "Vehiculo{" + "furgoneta=" + furgoneta + ", coche=" + coche + ", moto=" + moto + '}';
     }
+
     
 
     public Motos getMoto() {
@@ -39,38 +40,6 @@ public class Vehiculo {
 
     public void setMoto(Motos moto) {
         this.moto = moto;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
-    public double getKilometrajeAcomulado() {
-        return kilometrajeAcomulado;
-    }
-
-    public void setKilometrajeAcomulado(double kilometrajeAcomulado) {
-        this.kilometrajeAcomulado = kilometrajeAcomulado;
-    }
-
-    public boolean isEstadoDeAlquilado() {
-        return estadoDeAlquilado;
-    }
-
-    public void setEstadoDeAlquilado(boolean estadoDeAlquilado) {
-        this.estadoDeAlquilado = estadoDeAlquilado;
-    }
-
-    public double getTarifa() {
-        return tarifa;
-    }
-
-    public void setTarifa(double tarifa) {
-        this.tarifa = tarifa;
     }
 
     public Furgonetas getFurgoneta() {
@@ -98,21 +67,14 @@ public class Vehiculo {
     public void alquilarMoto(boolean x){
        moto.alquilarMoto();
     }
-    public void devolverFurgoneta(boolean x){
-        furgoneta.devolverFurgoneta();
+    public void devolverFurgoneta(String matricula, double kilometrajeAco){
+        furgoneta.devolverFurgoneta(matricula, kilometrajeAco);
     }
-    public void devolverCoche(boolean x){
-        coche.devolverCoche();
+    public void devolverCoche(String matricula, double kilometrajeAco){
+        coche.devolverCoche(matricula, kilometrajeAco);
     }
-    public void devolverMoto(boolean x){
-        moto.devolverMoto();
+    public void devolverMoto(String matricula, double kilometrajeAco){
+        moto.devolverMoto(matricula, kilometrajeAco);
     }
-    public double devolverVehiculo(String matricula, double kilometrajeAco){
-           double a,b;
-           this.kilometrajeAcomulado= kilometrajeAco;
-           a= kilometrajeAco-this.furgoneta.getKilometrajeAcomulado();
-           b= a * furgoneta.getTarifa();
-           System.out.println("costo alquiler: " + b);
-        return 0;
-       }
+    
     }

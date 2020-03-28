@@ -14,8 +14,6 @@ import ejercicio2.Vehiculo;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -37,13 +35,11 @@ public class Main {
         System.out.println("El nuevo saldo de su cuenta corriente es: " + cliente.getCuenta().getCuenta_corriente().getSaldo());
         System.out.println(" ");
         cliente.getCuenta().getSaldo();
-        */
-        
-        
+         */
         Furgonetas furgoneta1 = new Furgonetas("RLM80E", 60000.00, "5 TONELADAS");
         Coches coche1 = new Coches("KVJ-131", 88000.00, true, false);
         Motos moto1 = new Motos("VNS28E", 7000.00, true, false);
-        Vehiculo vehi = new Vehiculo("1", 0, true, 0, furgoneta1, coche1, moto1);
+        Vehiculo vehi = new Vehiculo(furgoneta1, coche1, moto1);
         vehi.alquilarFurgoneta(true);
         System.out.println("");
         System.out.println(furgoneta1);
@@ -56,12 +52,10 @@ public class Main {
         System.out.println("");
         System.out.println(moto1);
         System.out.println("");
-        vehi.devolverFurgoneta(true);
-        System.out.println("");
-        System.out.println(furgoneta1);
-        System.out.println("");
-        vehi.devolverVehiculo("RLM80E", 55000.00);
-        System.out.println(furgoneta1);
-    }
+        vehi.devolverFurgoneta("RLM80E", 80000.00);
+        vehi.devolverMoto("VNS28E", 9000.00);
+        vehi.devolverCoche("KVJ-131", 100000.00);
+        
 
+    }
 }
