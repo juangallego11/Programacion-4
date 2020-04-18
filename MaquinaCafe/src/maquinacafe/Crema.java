@@ -22,7 +22,7 @@ public class Crema extends Decorardor{
 
     @Override
     public int getprecio() {
-        return adicion.getprecio() + 1600;
+        return adicion.getprecio() + 2;
     }
     
 }

@@ -5,10 +5,7 @@
  */
 package maquinacafe;
 
-/**
- *
- * @author cristiancg
- */
+
 public class MaquinaCafeMain {
 
     /**

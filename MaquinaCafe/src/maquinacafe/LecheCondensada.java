@@ -5,8 +5,23 @@
  */
 package maquinacafe;
 
+public class LecheCondensada extends Decorardor {
 
+    private Adiciones adicion;
 
-public class LecheCondensada {
-    
+    public LecheCondensada(Adiciones adicion) {
+        super(adicion);
+        this.adicion = adicion;
+    }
+
+    @Override
+    public String getdescripcion() {
+        return adicion.getdescripcion() + "SE AGREGO LECHE CONDENSADA";
+    }
+
+    @Override
+    public int getprecio() {
+      return adicion.getprecio()+ 2;
+    }
+
 }

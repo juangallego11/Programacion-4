@@ -23,7 +23,7 @@ public class Brandy extends Decorardor{
 
     @Override
     public int getprecio() {
-       return adicion.getprecio() + 1800;
+       return adicion.getprecio() + 3;
     }
     
 }

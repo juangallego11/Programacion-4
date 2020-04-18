@@ -7,6 +7,23 @@ package maquinacafe;
 
 
 
-public class Hielo {
+public class Hielo extends Decorardor{
+    
+    private Adiciones adicion;
+
+    public Hielo(Adiciones adicion) {
+        super(adicion);
+        this.adicion = adicion;
+    }
+
+    @Override
+    public String getdescripcion() {
+        return adicion.getdescripcion()+ "SE AGREGO HIELO";
+    }
+
+    @Override
+    public int getprecio() {
+       return adicion.getprecio() + 0;
+    }
     
 }

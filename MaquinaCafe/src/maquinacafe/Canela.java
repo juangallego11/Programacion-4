@@ -17,12 +17,12 @@ public class Canela extends Decorardor{
 
     @Override
     public String getdescripcion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return adicion.getdescripcion()+"SE AGREGO CANELA";
     }
 
     @Override
     public int getprecio() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return adicion.getprecio() + 1;
     }
     
 }

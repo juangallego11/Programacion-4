@@ -22,7 +22,7 @@ public class Chocolate extends Decorardor{
 
     @Override
     public int getprecio() {
-        return adicion.getprecio() + 1500;
+        return adicion.getprecio() + 1;
     }
     
     
