@@ -6,3 +6,4 @@
 # Parcial 1 Programacion4
 # Calculadora Cientifica disenio MVC
 # Maquina Expendedora de Cafe, Modo Grafico.
+# Taller Patrones de Disenio.
