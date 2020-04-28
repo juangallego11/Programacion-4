@@ -7,3 +7,4 @@
 # Calculadora Cientifica disenio MVC
 # Maquina Expendedora de Cafe, Modo Grafico.
 # Taller Patrones de Disenio.
+# Juego Triqui version sin inteligencia Artificial.
