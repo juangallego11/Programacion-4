@@ -8,3 +8,4 @@
 # Maquina Expendedora de Cafe, Modo Grafico.
 # Taller Patrones de Disenio.
 # Juego Triqui version sin inteligencia Artificial.
+# Taller Patrones de Disenio Factory Ejercicios 1 y 3.
