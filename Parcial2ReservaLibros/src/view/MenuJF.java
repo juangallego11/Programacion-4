@@ -176,6 +176,7 @@ public class MenuJF extends javax.swing.JFrame {
         jMenu3.add(ItemConsultar);
 
         jMenuItem1.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 10)); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cheque.png"))); // NOI18N
         jMenuItem1.setText("CONSULTAR RESERVA");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

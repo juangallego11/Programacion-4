@@ -80,6 +80,7 @@ public class JFregistrarUsuario extends javax.swing.JFrame {
         jLabel7.setText("CLAVE:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 75, -1, -1));
 
+        btnOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/useradd.png"))); // NOI18N
         btnOk.setText("OK");
         btnOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

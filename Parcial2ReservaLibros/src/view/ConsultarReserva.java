@@ -111,7 +111,7 @@ public class ConsultarReserva extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaReservados);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 560, 180));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 560, 180));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 600, 240));
 
@@ -121,6 +121,7 @@ public class ConsultarReserva extends javax.swing.JFrame {
         jLabel1.setText("FILTRO:");
 
         btnFiltrar.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 12)); // NOI18N
+        btnFiltrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/herramienta.png"))); // NOI18N
         btnFiltrar.setText("FILTRAR");
         btnFiltrar.setBorderPainted(false);
         btnFiltrar.addActionListener(new java.awt.event.ActionListener() {
@@ -130,6 +131,7 @@ public class ConsultarReserva extends javax.swing.JFrame {
         });
 
         btnRetirar1.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 12)); // NOI18N
+        btnRetirar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/hora.png"))); // NOI18N
         btnRetirar1.setText("RETIRAR");
         btnRetirar1.setBorderPainted(false);
 
@@ -146,7 +148,7 @@ public class ConsultarReserva extends javax.swing.JFrame {
                 .addComponent(btnFiltrar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnRetirar1)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

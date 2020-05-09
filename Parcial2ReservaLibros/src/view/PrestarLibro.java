@@ -77,20 +77,21 @@ public class PrestarLibro extends javax.swing.JFrame {
         getContentPane().add(txtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 220, -1));
 
         jButton1.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 12)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/presto.png"))); // NOI18N
         jButton1.setText("CONFIRMAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, -1, -1));
-        getContentPane().add(dteFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 220, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, -1, -1));
+        getContentPane().add(dteFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 220, -1));
 
         jLabel5.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("CONFIRME USUARIO");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, -1, -1));
-        getContentPane().add(txtConfirmarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 220, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        getContentPane().add(txtConfirmarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 220, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Lot-of-books-in-library_m.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 340));

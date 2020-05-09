@@ -69,7 +69,7 @@ public class ListarLibros extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 574, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -81,55 +81,75 @@ public class ListarLibros extends javax.swing.JFrame {
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Opciones", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("DejaVu Math TeX Gyre", 1, 14))); // NOI18N
-        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnMasivos.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 10)); // NOI18N
+        btnMasivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/negocio (1).png"))); // NOI18N
         btnMasivos.setText("MASIVOS");
+        btnMasivos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMasivos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnMasivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMasivosActionPerformed(evt);
             }
         });
-        jPanel2.add(btnMasivos);
+        jPanel2.add(btnMasivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
 
+        btnNormales.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 10)); // NOI18N
+        btnNormales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/interfaz.png"))); // NOI18N
         btnNormales.setText("NORMALES");
+        btnNormales.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnNormales.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         btnNormales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNormalesActionPerformed(evt);
             }
         });
-        jPanel2.add(btnNormales);
+        jPanel2.add(btnNormales, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, -1));
 
+        bynCriticos.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 10)); // NOI18N
+        bynCriticos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/educaciones.png"))); // NOI18N
         bynCriticos.setText("CRITICOS");
+        bynCriticos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bynCriticos.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         bynCriticos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bynCriticosActionPerformed(evt);
             }
         });
-        jPanel2.add(bynCriticos);
+        jPanel2.add(bynCriticos, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, -1));
 
+        btnEliminarLibro.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 10)); // NOI18N
+        btnEliminarLibro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconborro.png"))); // NOI18N
         btnEliminarLibro.setText("ELIMINAR");
+        btnEliminarLibro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEliminarLibro.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         btnEliminarLibro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarLibroActionPerformed(evt);
             }
         });
-        jPanel2.add(btnEliminarLibro);
+        jPanel2.add(btnEliminarLibro, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
 
+        btnModificarLibro.setFont(new java.awt.Font("DejaVu Math TeX Gyre", 1, 10)); // NOI18N
+        btnModificarLibro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/orientacion.png"))); // NOI18N
         btnModificarLibro.setText("MODIFICAR");
-        jPanel2.add(btnModificarLibro);
+        btnModificarLibro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnModificarLibro.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel2.add(btnModificarLibro, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
