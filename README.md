@@ -9,3 +9,4 @@
 # Taller Patrones de Disenio.
 # Juego Triqui version sin inteligencia Artificial.
 # Taller Patrones de Disenio Factory Ejercicios 1 y 3.
+# Parcial 2 Patrones de disenio = Sistema Biblioteca.
